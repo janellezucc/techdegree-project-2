@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 *, *:before, *:after {
@@ -11,13 +12,14 @@
 
 /* Base Element Styles */
 
+h1, h2, h3, h4, h5, li {
+    font-family: 'Roboto', sans-serif;
+}
+
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 header {
     background-color: rgb(250, 250, 250);
@@ -73,6 +75,28 @@ p {
     
 }
 
+.projects-img {
+    width : 100%;
+}
+
+h2 {
+    color: rgb(74, 74, 74);
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 4px;
+    padding: 9px 0;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(74, 74, 74);
+}
+
 /* Tablet Media Query */
 
 @media (min-width: 768px) {
@@ -93,5 +117,16 @@ p {
 /* Desktop Media Query */
 
 @media (min-width: 1024px) {
+    header h1 {
+        float: left;
+    }
 
+    header ul {
+        float: right;
+    }
+
+    header nav ul li {
+        float: left;
+        padding: 0 24px;
+    }
 }
