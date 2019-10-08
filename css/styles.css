@@ -114,6 +114,7 @@ h4 {
 }
 
 .main-footer {
+    overflow: auto;
     text-align: center;
 }
 
@@ -176,8 +177,26 @@ a:hover {
     }
 
     .main-projects {
-        display: inline-block;
+        overflow: auto;
+        padding: 0 20px;
+        width: 100%;
     }
+
+    .projects {
+        float: left;
+        margin-right: 1%;
+        width: 49%;
+    }
+
+    .projects:nth-of-type(2n) {
+        margin-left: 1%;
+        margin-right: 0;
+    }
+
+    .projects:nth-of-type(2n+1) {
+        clear: left;
+    }
+
 }
 
 /* Desktop Media Query */
@@ -194,5 +213,33 @@ a:hover {
     header nav ul li {
         float: left;
         padding: 0 24px;
+    }
+
+    .main-projects {
+        overflow: auto;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .projects {
+        margin-right: 1%;
+        width: 32%;
+    }
+
+    .projects:nth-of-type(2n) {
+        margin-left: inherit;
+        margin-right: 1%;
+    }
+
+    .projects:nth-of-type(2n+1) {
+        clear: inherit;
+    }
+
+    .projects:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .projects:nth-of-type(3n+1) {
+        clear: left;
     }
 }
