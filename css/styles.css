@@ -116,6 +116,7 @@ h4 {
 .main-footer {
     overflow: auto;
     text-align: center;
+    border-top: solid 2px rgb(231, 231, 231);
 }
 
 .main-footer h2{
@@ -155,8 +156,16 @@ a:hover {
 /* Tablet Media Query */
 
 @media (min-width: 768px) {
+
+    header h1 {
+        padding-top: 50px;
+    }
     header ul {
         display: inline;
+    }
+
+    .main-nav {
+        text-align: center; 
     }
 
     header nav ul li {
@@ -169,11 +178,23 @@ a:hover {
         float: right;
         padding-top: 60px;
         padding-bottom: 60px;
+        padding-left: 20px;
+        padding-right: 15px;
+        width: 40%
     }
 
     p {
+        padding-top: 10px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .portfolio-p {
+        text-align: left;
+        letter-spacing: .5px;
         padding-top: 60px;
-        padding-bottom: 60px;
+        font-size: 20px;
     }
 
     .main-projects {
@@ -197,22 +218,32 @@ a:hover {
         clear: left;
     }
 
+    h4 {
+        padding: 0;
+    }
 }
 
 /* Desktop Media Query */
 
 @media (min-width: 1024px) {
     header h1 {
+        overflow: auto;
         float: left;
+        padding-top: 50px;
     }
 
-    header ul {
+    .main-nav {
+        padding-top: 50px;
         float: right;
     }
 
     header nav ul li {
         float: left;
         padding: 0 24px;
+    }
+
+    .header-img {
+        float: right;
     }
 
     .main-projects {
