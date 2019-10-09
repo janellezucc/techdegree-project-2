@@ -141,6 +141,10 @@ h4 {
     margin: 10px;
 }
 
+.main-footer .main-nav {
+    display: none;
+}
+
 
 /* Pseudo classes */
 
@@ -219,6 +223,17 @@ a:hover {
         text-align: center;
     }
 
+    .main-footer h3 {
+        display: none;
+    }
+
+    .main-footer .main-nav {
+        display: inline-block;
+        margin-bottom: 4px;
+        padding: 9px 0;
+        text-align: center;
+    }
+
     .main-projects {
         overflow: auto;
         padding: 0 20px;
@@ -286,6 +301,13 @@ a:hover {
 
     .main-footer h3{
         display: none;
+    }
+
+    .main-footer .main-nav {
+        display: inline-block;
+        margin-bottom: 4px;
+        padding: 9px 0;
+        text-align: center;
     }
 
     .main-projects {
