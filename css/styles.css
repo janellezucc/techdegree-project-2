@@ -1,20 +1,10 @@
 /* Universal Selectors */
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-
 
 /* Base Element Styles */
-
-h1, h2, h3, h4, h5, li {
-    font-family: 'Roboto', sans-serif;
-}
 
 html {
     box-sizing: border-box;
@@ -234,6 +224,16 @@ a:hover {
         text-align: center;
     }
 
+    .main-footer .main-nav li {
+        display: inline-block;
+        margin-left: 50px;
+    }
+
+    li {
+        display: inline-block;
+        
+    }
+
     .main-projects {
         overflow: auto;
         padding: 0 20px;
@@ -272,9 +272,10 @@ a:hover {
     }
 
     .main-nav {
-        display: inline-block;
-        text-align: right; 
-        padding-left: 650px;
+        display: block;
+        text-align: right;
+        float: right;
+        padding-top: 50px;
     }
 
     header nav ul li {
@@ -304,10 +305,20 @@ a:hover {
     }
 
     .main-footer .main-nav {
-        display: inline-block;
-        margin-bottom: 4px;
-        padding: 9px 0;
+        display: block;
+        float: right;
+        margin-bottom: 0;
+        margin-top: 10px;
         text-align: center;
+    }
+
+    .main-footer .main-nav li {
+        display: inline-block;
+    }
+
+    .main-footer .main-nav li a {
+        line-height: 24px;
+        padding: 9px;
     }
 
     .main-projects {
